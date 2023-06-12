@@ -7,14 +7,16 @@ public class Main {
         
         // Inheritance
         Tropical tropical = new Tropical("Mahogany");
+        System.out.println("Wood type: " + tropical.getType());
         tropical.start();
         
         // Encapsulation
-        detail.setColor("Bright Brown");
+        detail.setColor("Dark Brown");
         System.out.println("detail color: " + detail.getColor());
         
         // Abstract Class
         Wood wood = new Tropical("Teak");
+        System.out.println("Wood type: " + wood.getType());
         wood.start();
         
        // Immutable Object

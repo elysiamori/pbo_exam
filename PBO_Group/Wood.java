@@ -1,13 +1,13 @@
 // Contoh kelas abstrak
 public abstract class Wood {
-    private String brand;
+    private String type;
     
-    public Wood(String brand) {
-        this.brand = brand;
+    public Wood(String type) {
+        this.type = type;
     }
     
-    public String getBrand() {
-        return brand;
+    public String getType() {
+        return type;
     }
     
     public abstract void start();
