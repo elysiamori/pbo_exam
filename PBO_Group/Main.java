@@ -10,7 +10,7 @@ public class Main {
         tropical.start();
         
         // Encapsulation
-        detail.setColor("Dark Brown");
+        detail.setColor("Bright Brown");
         System.out.println("detail color: " + detail.getColor());
         
         // Abstract Class
