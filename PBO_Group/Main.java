@@ -1,21 +1,21 @@
 public class Main {
     public static void main(String[] args) {
          // Object & Class
-        Wood circle = new Wood("brown", 10, 4);
-        System.out.println("Wood color: " + circle.getColor());
-        System.out.println("Wood volume: " + circle.getArea());
+        Detail detail = new Detail("brown", 10, 4);
+        System.out.println("Wood color: " + detail.getColor());
+        System.out.println("Wood volume: " + detail.getArea());
         
         // Inheritance
-        Car car = new Car("Toyota");
-        car.start();
+        Tropical tropical = new Tropical("Mahogany");
+        tropical.start();
         
         // Encapsulation
-        circle.setColor("Blue");
-        System.out.println("Circle color: " + circle.getColor());
+        detail.setColor("Dark Brown");
+        System.out.println("detail color: " + detail.getColor());
         
         // Abstract Class
-        Vehicle vehicle = new Car("Honda");
-        vehicle.start();
+        Wood wood = new Tropical("Teak");
+        wood.start();
         
        // Immutable Object
         Size<Integer> size = new Size<>(10, 50);
