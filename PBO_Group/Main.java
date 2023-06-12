@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        // Object & Class
-        Circle circle = new Circle("Red", 7);
-        System.out.println("Circle color: " + circle.getColor());
-        System.out.println("Circle area: " + circle.getArea());
+         // Object & Class
+        Wood circle = new Wood("brown", 10, 4);
+        System.out.println("Wood color: " + circle.getColor());
+        System.out.println("Wood volume: " + circle.getArea());
         
         // Inheritance
         Car car = new Car("Toyota");
@@ -17,9 +17,9 @@ public class Main {
         Vehicle vehicle = new Car("Honda");
         vehicle.start();
         
-        // Immutable Object
-        Point<Integer> point = new Point<>(10, 500);
-        System.out.println("Point: (" + point.getX() + ", " + point.getY() + ")");
+       // Immutable Object
+        Size<Integer> size = new Size<>(10, 50);
+        System.out.println("(length: " + size.getX() + ") (width: " + size.getY() + ")");
         
         // Generic & Interface
         Stack<Integer> stack = new ArrayStack<>(5);
