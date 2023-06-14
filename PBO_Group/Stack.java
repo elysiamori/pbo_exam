@@ -1,6 +1,5 @@
 // Purpose: Interface for Stack
-public interface Stack<E> {
-    void push(E element);
-    E pop();
-    boolean isEmpty();
+public interface Stack<T> {
+   void interact();
+   public String weapon();
 }
