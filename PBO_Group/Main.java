@@ -24,12 +24,15 @@ public class Main {
         System.out.println("(length: " + size.getX() + ") (width: " + size.getY() + ")");
         
         // Generic & Interface
-        Stack<Integer> stack = new ArrayStack<>(5);
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-        System.out.println("Pop: " + stack.pop());
-        System.out.println("Pop: " + stack.pop());
-        System.out.println("Is Empty: " + stack.isEmpty());
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the weapon: ");
+        String weapon = scanner.nextLine();
+
+        WoodcuttingAxe<Tropical> woodcuttingAxe = new WoodcuttingAxe<>(tropical, weapon);
+
+        woodcuttingAxe.interact();
+        System.out.println(woodcuttingAxe.weapon());  
+
+        scanner.close();
     }
 }
